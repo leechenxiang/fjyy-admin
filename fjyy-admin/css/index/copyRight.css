@@ -1,0 +1,37 @@
+.copy-right-wrapper {
+    width: 100%;
+    min-width: 1150px;
+    background-color: #1b1e1f;
+    padding: 12px 0;
+    color: #828485;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-right {
+    width: 1100px;
+    align-self: center;
+    color: #939494;
+    font-size: 13px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.link-of-words {
+    color: #9b9d9d;
+}
+
+.gongan-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gongan {
+    width: 14px;
+    height: 14px;
+}

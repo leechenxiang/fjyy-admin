@@ -1,0 +1,39 @@
+body {
+    background-color: #f2f6f9;
+}
+
+/* css by 风间影月 */
+.container {
+    /* width: 1600px; */
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    /* min-height: 1000px; */
+    /* min-height: 880px; */
+    
+    /* flex布局，页面主要内容分为左中右三块 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    color: black;
+}
+
+.topic-form {
+    padding: 0 20px;
+}
+
+.topic-content {
+    align-self: center;
+    align-items: center;
+}
+
+.btns-box {
+    margin-top: 20px;
+}

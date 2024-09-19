@@ -1,0 +1,29 @@
+body {
+    background-color: #f6f8fa;
+}
+
+
+/* css by 风间影月 */
+.container {
+    /* width: 1600px; */
+    /* margin: 0 auto; */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    min-width: 1150px;
+    /* height: 300px; */
+    /* min-height: 1000px; */
+    /* min-height: 880px; */
+    
+    /* flex布局，页面主要内容分为左中右三块 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-size: 16px;
+    color: black;
+}
+
+.player-course {
+    margin-top: 20px;
+}

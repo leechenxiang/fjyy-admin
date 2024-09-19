@@ -1,0 +1,83 @@
+/* 全局样式 */
+body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    /* 下面这个 Helvetica 有乱码 */
+    /* font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; */
+    /* font-family:"PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif"; */
+    /* font-family: "Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif"; */
+    font-size: 12px;
+    line-height: 1.5;
+    color: #657181;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+} 
+
+.category-tag {
+    font-size: 10px;
+    /* color: #7da2b6; */
+    margin-right: 10px;
+    padding: 1px 5px;
+    border: 1px solid;
+    /* border-color: #7da2b6; */
+}
+
+.attention {
+    min-width: 1150px;
+    position: relative;
+    background-color: rgb(237 249 238);
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 4px 0px;
+    border-color: rgb(53 197 48);
+    font: 16px / 1.5 tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+}
+
+.badge {
+    min-width: 10px;
+    height: 10px;
+
+    padding: 4px;
+
+    /* width: 40px; */
+    color: #fff;
+    font-weight: 500;
+    font-size: 8px;
+
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+    /* 使用默认盒子模型，否则与bootstrapt冲突有问题 */
+	box-sizing:content-box
+}
+
+.primary {
+    background-color: #119e8f;
+}
+
+/* 添加删除线 */
+.strike-through {
+    text-decoration: line-through;
+}
+/* 添加上划线 */
+.over-line {
+    text-decoration: overline;
+}
+/* 添加下划线 */
+.under-line {
+    text-decoration: underline;
+}
+
+/* 解决vue加载前页面显示{{}}标签 */
+[v-cloak] {
+    display: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>分享</title>
+    <meta name=description content="内容描述">    
+    <meta name=keywords content="关键字">
+    <link rel="stylesheet" href="./share.min.css">
+    <style>.row{margin: 20px 0;}</style>
+</head>
+<body>
+    <div class="social-share row" data-sites="weibo,qq,qzone,tencent"></div>
+    <div class="share-component row" data-disabled="wechat , facebook, twitter, google"></div>
+    <div class="social-share row"></div>
+    <div class="social-share row" data-initialized="true"> 
+		<a href="#" class="social-share-icon icon-weibo"></a> 
+		<a href="#" class="social-share-icon icon-qq"></a> 
+		<a href="#" class="social-share-icon icon-qzone"></a> 
+	</div>
+    <div class="social-share row" data-mode="prepend"> 
+		<a href="javascript:" class="social-share-icon icon-heart"></a> 
+	</div>
+    <div id="share-1 row"></div>
+    <div id="share-2 row"></div>
+    <div id="share-3 row" data-sites="weibo,qq,qzone,tencent"></div>
+    <div id="share-4 row" data-disabled="wechat , facebook, twitter, google"></div>
+    <div class='row' data-sites="weibo,qq,qzone,tencent"></div>
+    <div class='row' data-disabled="wechat , facebook, twitter, google"></div>
+    <div clas='row'></div>
+	<div class='row' data-initialized="true"> 
+		<a href="#" class="social-share-icon icon-weibo"></a> 
+		<a href="#" class="social-share-icon icon-qq"></a> 
+		<a href="#" class="social-share-icon icon-qzone"></a> 
+	</div>
+	<div class='row' data-mode="prepend"> <a href="javascript:" class="social-share-icon icon-heart"></a> </div>
+    <div class='row' id="share-1"></div>
+	<div class='row' id="share-2"></div>
+	<div class='row' id="share-3" data-sites="weibo,qq,qzone,tencent"></div>
+	<div class='row' id="share-4" data-disabled="wechat , facebook, twitter, google"></div>
+    <script src="./jquery.min.js"></script> 
+    <script src="./jquery.share.min.js"></script> 
+    <script>
+        $('#share-1').share();
+        $('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+        $('#share-3').share();
+        $('#share-4').share();
+    </script>
+</body>
+</html>
+
+

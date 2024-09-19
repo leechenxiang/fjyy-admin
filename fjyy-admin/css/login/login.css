@@ -1,0 +1,288 @@
+/* 登录页css by 风间影月 */
+body {
+    background-color: #fafafa;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* 高度拉满 */
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    width: 400px;
+    height: 350px;
+
+    box-shadow: 0 12px 36px 0 rgba(0, 4, 7, 0.18);
+
+    border-radius: 10px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 0;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+
+    margin: 10px 0;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-box {
+    margin: 20px 0 4px 0;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.div-mobile {
+    height: 40px;
+    font-size: 14px;
+}
+
+.div-mobile-prefix {
+    width: 70px;
+    color: #363636;
+
+    border-radius: 6px 0 0 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbbbb;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-mobile-prefix:hover {
+    border-color: #119e8f;
+    color: #000;
+    z-index: 2000;
+}
+
+.div-mobile-number {
+    width: 237px;
+
+    border-radius: 0 6px 6px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbbbb;
+
+    margin-left: -1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-mobile-number:hover {
+    border-color: #119e8f;
+    color: #000;
+    z-index: 2000;
+}
+
+.mobile-field {
+    width: 200px;
+    font-size: 14px;
+
+    text-align: left;
+    margin-left: 10px;
+    height: 30px;
+    border-width: 0;
+
+    outline: none;
+}
+
+.error-mobile-field {
+    color: #f94447;
+    font-size: 14px;
+
+    width: 310px;
+
+    align-self: center;
+}
+
+.code-box {
+    margin: 10px 0 4px 0;
+    align-self: center;
+    width: 310px;
+}
+
+.code-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-mobile-code {
+    width: 170px;
+
+    border-radius: 6px 6px 6px 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbbbb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    user-select: none;
+}
+.div-mobile-code:hover {
+    border-color: #119e8f;
+    color: #000;
+    z-index: 2000;
+}
+
+.code-field {
+    width: 140px;
+    font-size: 14px;
+
+    text-align: left;
+    margin-left: 10px;
+    height: 30px;
+    border-width: 0;
+
+    outline: none;
+}
+
+.div-mobile-btn {
+    /* width: 120px; */
+    height: 42px;
+
+    border-radius: 6px 6px 6px 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbbbb;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center; */
+}
+/* .div-mobile-btn:hover {
+    cursor: pointer;
+    background-color: #917ecd;
+    border-color: #917ecd;
+    color: #fafafa;
+    font-weight: bold;
+} */
+
+.btn-box {
+    margin: 16px 0 4px 0;
+}
+
+.btn-login-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-login {
+    width: 310px;
+    color: #fff;
+
+    align-self: center;
+
+    background-color: #119e8f;
+    border-radius: 8px 8px 8px 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    user-select: none;
+}
+.btn-login:hover {
+    cursor: pointer;
+    background-color: #2fbdaf;
+}
+
+.contract-box {
+    margin: 10px 0 4px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contract-wrapper {
+    width: 310px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chk-wrapper {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notice-wrapper {
+    padding-left: 6px;
+    font-size: 13px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.check {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4bdab6;
+
+    border-radius: 5px;
+}
+.check:hover {
+    cursor: pointer;
+}
+
+.uncheck {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 5px;
+
+    /* border-radius: 6px 0 0 6px; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbbbb;
+}
+.uncheck:hover {
+    cursor: pointer;
+    border-color: #4bdab6;
+}
+
+.links-wrapper {
+    margin-top: 30px;
+
+    align-self: center;
+}
+
+.links {
+
+}
+.links:hover {
+    cursor: pointer;
+}

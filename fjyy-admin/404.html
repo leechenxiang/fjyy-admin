@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+	<!-- 首页 -->
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/topHeader.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/searchButton.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/aboutUs.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/motto.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/index/copyRight.css" />
+	<!-- 第三方 -->
+	<link rel="stylesheet" type="text/css" href="css/index/carousel.css" />
+    
+    <title>页面找不到 - 尚自习 | 风间影月</title>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+        body {
+            text-align: center
+        }
+
+        h1 {
+            font-family: "微软雅黑"
+        }
+    </style>
+</head>
+
+<body>
+    <div id="errorPage"  v-cloak>
+        <p><img src="http://img.lanrentuku.com/img/allimg/1406/14025841314042.gif" width="520" height="320" style="margin-top: 20px;"/></p>
+        <h1>抱歉，这个页面已经被外星人绑架了~</h1>
+        <p style="font-size: 16px;">{{leftTimes}}秒钟后将带您<a href="./index.html">返回地球</a></p>
+    </div>
+</body>
+
+<script src="libs/vue.min.js"></script>
+<script src="libs/axios.min.js"></script>
+<script src="libs/jquery-3.4.1.min.js"></script>
+<!-- <script src="libs/jquery-1.7.2.min.js"></script> -->
+<!-- <script src="libs/carousel/jquery.min.js"></script> -->
+<script src="libs/carousel/HappyImage.min.js"></script>
+<script src="libs/moment-with-locales.min.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+	var errorPage = new Vue({
+		el: "#errorPage",
+		data: {
+			leftTimes: 5,
+		},
+		created() {
+			var me = this;
+
+            this.initTimes();
+		},
+		mounted() {
+		},
+		methods: {
+			initTimes() {
+                var me = this;
+                setInterval(function() {
+                    me.doCounts();
+                }, 1000);
+			},
+			doCounts() {
+                var leftTimes = this.leftTimes;
+                leftTimes--;
+                this.leftTimes = leftTimes;
+
+				if(leftTimes == 0){
+					window.location = "./index.html"
+                }
+            }
+		}
+	});
+
+</script>
+
+</html>

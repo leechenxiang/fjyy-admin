@@ -1,0 +1,41 @@
+/* 协议隐私页css by 风间影月 */
+body {
+    color: #000;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* 高度拉满 */
+    /* min-height: 100vh; */
+
+    padding: 10px 20px 60px 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+
+    align-self: center;
+
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.notice {
+    color: #474444;
+    margin-bottom: 30px;
+}
+
+.section {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.content {
+    line-height: 30px;
+    color: #474545;
+}

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ai-interviewer
+
+server:
+  port: ${port:8080}
+  tomcat:
+    uri-encoding: UTF-8

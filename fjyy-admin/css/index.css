@@ -1,0 +1,217 @@
+/* 首页css by 风间影月 */
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 16px;
+    /* min-height: 1000px; */
+    min-height: 880px;
+    
+    /* flex布局，页面主要内容分为左中右三块 */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.attached-info {
+    width: 340px;
+}
+
+.part-course-wrapper {
+    align-self: flex-start;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 5px; */
+}
+
+.part-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 课程列表 */
+.course-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.course-wrapper {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 3px #ffffff; */
+
+    margin-bottom: 30px;
+
+    /* margin-left: 10px;
+    margin-right: 10px; */
+
+    box-shadow: 0 6px 12px 0 rgba(55,55,55,.2);
+}
+
+/* 解决flex布局 space-between最后一行两边分布的问题 */
+.course-list-wrapper:after { 
+    content: ""; 
+    /* 元素的宽度 */
+    width: 260px;   
+} 
+.blank-temp {
+    /* 元素的宽度 */
+    width: 260px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.course-wrapper:hover {
+    /* border: solid 3px #63c6ae; */
+    /* border: solid 3px #119e8f; */
+}
+/* .course-wrapper:hover .teacher-face {
+    border: solid 3px #119e8f;
+} */
+/* .course-wrapper:hover .course-info {
+    border-left: solid 1px #ffffff;
+} */
+.course-cover {
+    width: 260px;
+    height: 160px;
+
+    /* position: relative; */
+}
+.teacher-face {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    align-self: center;
+
+    /* position: relative;
+    top: -40px; */
+    /* margin: -46px; */
+    /* border: 2px solid #ffffff; */
+}
+.course-info {
+    padding: 0px 8px 2px 8px;
+    text-align: left;
+
+    /* border-left: solid 1px #dbe1e7; */
+}
+.course-title {
+    margin-top: 4px;
+    /* padding: 6px 0 0 0; */
+    padding: 2px 0;
+    font-size: 15px;
+    font-weight: bold;
+    /* line-height: 20px; */
+    
+}
+.link-course-title {
+    color: rgb(128 124 124);
+}
+.course-desc {
+    padding: 2px 0;
+    color: rgb(43, 42, 42);
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.course-base-counts {
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+}
+.study-counts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.person-ico {
+    width: 14px;
+    height: 14px;
+    align-self: center
+}
+.number-counts {
+    align-self: center;
+    margin-left: 3px;
+}
+.comment-counts {
+    width: 160px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.price-wrapper {
+    /* padding: 2px 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teacher-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.free-course {
+    /* color: #63c6ae; */
+    color: #119e8f;
+    font-weight: bold;
+}
+.difficulty-level {
+    /* color: #63c6ae; */
+    color: #119e8f;
+    font-weight: bold;
+    /* width: 75px; */
+}
+.learn-counts {
+    /* color: #63c6ae; */
+    color: #a8a8a8;
+    font-weight: 600;
+    /* width: 75px; */
+}
+.new-price {
+    /* color: #63c6ae; */
+    color: #ff7a38;
+    font-weight: bold;
+    /* width: 75px; */
+}
+.old-price {
+    /* width: 75px; */
+    margin-left: 6px;
+    color: #616161;
+    /* font-weight: bold; */
+    text-decoration:line-through;
+}
+.teacher-name {
+    /* width: 100%; */
+    color: #8c8a8a;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icon-new {
+    width: 38px;
+    position: relative;
+    top: 3px;
+}
+
+.icon-1111 {
+    width: 38px;
+    position: relative;
+    top: 3px;
+
+    border-radius: 5px;
+}
+
+.icon-618 {
+    width: 30px;
+    position: relative;
+    top: 3px;
+
+    border-radius: 5px;
+}

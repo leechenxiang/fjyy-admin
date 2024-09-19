@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+	
+	<!-- 第三方 -->
+	<!-- <link rel="stylesheet" href="../../libs/element-ui/index.css"> -->
+	<!-- <link rel="stylesheet" href="../../libs/element-2.15.13/index.css"> -->
+	<link rel="stylesheet" href="../../css/theme/style/theme/index.css">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.13/lib/theme-chalk/index.css"> -->
+	<!-- <link rel="stylesheet" href="../../libs/cherry-markdown/dist/cherry-markdown.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/cherry-markdown@0.8.40/dist/cherry-markdown.min.css"> -->
+	
+	<link rel="stylesheet" type="text/css" href="../../css/app.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/admin/mng.css"/>
+	
+
+	<style type="text/css">
+	</style>
+
+	<link rel="shortcut icon" href="../../img/logo/itzixi.ico" type="image/x-icon">
+
+	<title>风间影月 · 管理中心&综合管理平台</title>
+</head>
+
+<body>
+	<div id="dashboardPage" class="container">
+
+		<el-container class="dashboard-in-one">
+			<el-aside width="200px" class="menu-container">
+				<div class="logo-box">
+					<!-- 1781 × 662 -->
+					<img src="../../img/logo/fjyy-logo.png" height="50px" width="134px" class="itzixi-logo"/>
+				</div>
+
+				<!-- :default-active="activeMenu" -->
+				<el-menu @select="handleSelect" :default-active="activeMenu" ref="leeMenu">
+					<div v-for="item in menuList" :key="item.path">
+						<span v-show="item.role == currentRole">
+							<el-menu-item v-if="item.children.length === 0" :index="item.index" @click="saveRoutePath(item.index)">
+								<i :class="item.icon"></i>
+								<span slot="title">{{item.title}}</span>
+							</el-menu-item>
+							<el-submenu v-else :index="item.index">
+								<template slot="title">
+									<i :class="item.icon"></i>
+									<span slot="title">{{item.title}}</span>
+								</template>
+								<el-menu-item-group>
+									<div v-for="item1 in item.children" :key="item1.path">
+										<el-menu-item v-if="item1.children.length === 0" :index="item1.index" @click="saveRoutePath(item1.index)">
+											<i :class="item1.icon"></i>
+											<span slot="title">{{item1.title}}</span>
+										</el-menu-item>
+										<el-submenu v-else :index="item1.index" @click="saveRoutePath(item1.index)">
+											<template slot="title">
+												<i :class="item1.icon"></i>
+												<span v-show="!isCollapse" slot="title">{{item1.title}}</span>
+											</template>
+											<el-menu-item-group>
+												<div v-for="item2 in item1.children" :key="item2.path">
+												<el-menu-item v-if="item2.children.length === 0" :index="item2.index" @click="saveRoutePath(item2.index)">
+													<i :class="item2.icon"></i>
+													<span slot="title">{{item2.title}}</span>
+												</el-menu-item>
+												<el-submenu v-else :index="item2.index" @click="saveRoutePath(item2.index)">
+													<template slot="title">
+														<i :class="item2.icon"></i>
+														<span slot="title">{{item2.title}}</span>
+													</template>
+													<el-menu-item-group>
+													<div v-for="item3 in item2.children" :key="item3.path">
+														<el-menu-item v-if="item3.children.length === 0" :index="item3.index" @click="saveRoutePath(item3.index)">
+															<i :class="item3.icon"></i>
+															<span slot="title">{{item3.title}}</span>
+														</el-menu-item>
+													</div>
+													</el-menu-item-group>
+												</el-submenu>
+												</div>
+											</el-menu-item-group>
+										</el-submenu>
+									</div>
+								</el-menu-item-group>
+							</el-submenu>
+						</span>
+					</div>
+				</el-menu>
+
+			</el-aside>
+			<el-container>
+				<el-header class="header-container">
+
+					<div class="header-box">
+					</div>
+
+				</el-header>	
+				<el-main class="main-container">
+					
+					<!-- 路由出口 -->
+					<!-- 路由匹配到的组件将渲染在这里 -->
+					<transition mode="out-in">
+						<router-view @changemenuformrouteview="updateSelectedMenu"></router-view>
+						<!-- <router-view @resetmenu="changeActiveMenu"></router-view> -->
+					</transition>
+
+					<!-- <router-link to="/login">登陆</router-link>
+					<router-link to="/register">注册</router-link>
+					<router-link to="/register">外部引入</router-link> -->
+					
+					<!-- <my-component></my-component> -->
+				</el-main>
+			</el-container>
+		</el-container>
+
+	</div>
+</body>
+
+<script src="../../libs/vue.min.js"></script>
+<script src="../../libs/axios.min.js"></script>
+<script src="../../libs/jquery-3.4.1.min.js"></script>
+<script src="../../libs/js.cookie.min.js"></script>
+<script src="../../js/app.js"></script>
+
+<script src="../../libs/sweetalert.min.js"></script>
+<script src="../../libs/element-2.15.13/index.js"></script>
+
+<script src="../../libs/vue-router.js"></script>
+<script src="../../libs/httpVueLoader.js"></script>
+
+<script src="./adminrouter.js"></script>
+
+<script src="../../js/cookieUtils.js"></script>
+<script src="../../js/request.js"></script>
+<script src="../../js/apis/admin/stuApi.js"></script>
+
+<script>
+
+	const routes = myrouter.routes;
+
+	var router = new VueRouter({
+		routes // (缩写) 相当于 routes: routes
+	})
+
+	var dashboardPage = new Vue({
+		el: "#dashboardPage",
+		components: {
+			// 'my-component': httpVueLoader('my-component.vue')
+        },
+		router: router, 
+		data() {
+			return {
+				// currentRole: 1,
+				currentRole: 1,
+				userInfo: {},
+
+				activeMenu: "dashboard",
+
+				isCollapse : true,
+				routerList: [],
+				menuList: [
+				],
+			}
+		},
+		created() { 
+			var me = this;
+			this.menuList = myrouter.menuList;
+			var routePath = sessionStorage.getItem("path");
+			console.log("routePath = " + routePath);
+			if (routePath != null && routePath != "" && routePath != undefined) {
+				this.activeMenu = routePath;
+			}
+		},
+		mounted() {
+			console.log("mounted this.activeMenu = " + this.activeMenu);
+
+		},
+		watch: {
+		},
+		methods: {
+			handleDropdown(command) {
+				if (command === "logout") {
+					this.logout();
+				}
+			},
+
+			logout() {
+			},
+
+			updateSelectedMenu(index) {
+				console.log("fatherMethod index = " + index);
+				this.saveRoutePath(index);
+				this.activeMenu = index;
+			}, 
+
+			saveRoutePath(index) {
+				sessionStorage.setItem("path", index);
+			},
+
+			// 设置路由列表
+			setRouterList(menuList) {
+				menuList.forEach(item => {
+					if(item.children.length === 0) {
+						this.routerList[item.index] = item.path;
+					} else {
+						this.setRouterList(item.children);
+					}
+				});
+				// console.log(this.routerList);
+			},
+
+			handleSelect(key, keyPath) {
+				// console.log(key, keyPath);
+				// console.log(keyPath);
+
+				var path = "/" + keyPath[0];
+				if (keyPath[1] != null && keyPath[1] != undefined) {
+					path = "/" + keyPath[0] + "/" + keyPath[1];
+				}
+				// console.log(path);
+				this.$router.push({path: path});
+			},
+
+		}
+	});
+
+</script>
+
+</html>

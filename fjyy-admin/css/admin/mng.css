@@ -1,0 +1,218 @@
+/* admin控制台页面css by 风间影月 */
+body {
+    /* color: #000;
+    font-size: 15px; */
+    min-width: 1150px;
+}
+
+.container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+
+    /* 高度拉满 */
+    /* min-height: 100vh; */
+
+}
+
+/* 设置动画效果 */
+.v-enter,.v-leave-to{
+    opacity: 0;
+    transform: translateX(9.375rem);
+}
+
+.v-enter-active, .v-leave-active{
+    transition: all 0.5s ease;
+}
+
+
+/* .el-header,
+.el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+} */
+
+/* .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+} */
+
+/* .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+} */
+
+/* body>.el-container {
+    margin-bottom: 40px;
+} */
+
+/* .el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+} */
+
+/* .el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+} */
+
+.dashboard-in-one {
+    height: 100vh;
+}
+
+/* 顶部header start */
+.header-container {
+    background-color: #f9fbfd;
+    /* background-color: lightcoral; */
+    height: 70px;
+}
+
+.header-box {
+    width: 100wh;
+    height: 70px;
+    /* background-color: #ba52ed; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* .header-box .el-menu {
+    background-color: #f9fbfd;
+    border-bottom: solid 0 #e6e6e6;
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} */
+
+/* .menu-header:hover {
+    color: #119e8f;
+    background-color: #e5f6f4;  
+    font-weight: 400;
+} */
+
+.el-dropdown-link {
+    cursor: pointer;
+    color: #0a0a0a;
+
+    display: flex;
+    flex-direction: column;
+}
+.el-icon-arrow-down {
+    font-size: 12px;
+}
+
+.dropdown-myinfo-box {
+    align-self: center;
+}
+.mobile-content {
+    color: #6b6b6b;
+}
+
+.myinfo-dropdown-item {
+    font-size: 14px;
+    font-weight: 400;
+    width: 90px;
+}
+
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: #e5f6f4 !important;
+    color: #119e8f !important;
+}
+
+.my-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.el-icon-caret-bottom {
+    align-self: center;
+}
+
+/* end */
+
+/* 侧边栏菜单 start */
+.menu-container {
+    background-color: #fff;
+
+    /* box-shadow: 0 12px 36px 0 rgba(0, 4, 7, 0.18); */
+
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1);
+
+    z-index: 50;
+
+    /* overflow: hidden; */
+}
+
+.menu-container::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+.logo-box {
+    height: 70px;
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+.itzixi-logo {
+    /* align-self: center; */
+}
+
+.el-menu-item-group__title {
+    /* color: #917ecd; */
+}
+
+.el-menu {
+    border-right: solid 0px #e6e6e6;
+}
+.el-menu-item {          
+    color: #0a0a0a;        
+    font-weight: 400;
+}        
+.el-menu-item.is-active {
+    color: #EAEEFF;          
+    background-color: #119e8f;        
+    font-weight: bold;
+}
+.el-menu-item:hover {
+    color: #0a0a0a;
+    background-color: #e5f6f4;  
+    font-weight: 400;
+}
+
+.el-submenu__title {
+    color: #0a0a0a; 
+}
+.el-submenu__title:hover {
+    color: #0a0a0a; 
+    background-color: #e5f6f4;  
+    font-weight: 400;
+}
+
+.el-menu-item i {
+    color: #119e8f;
+}
+.el-submenu__title i {
+    color: #119e8f;
+}
+/* end */
+
+/* 主题操作区域 start */
+.main-container {
+    background-color: #f9fbfd;
+}
+/* end */

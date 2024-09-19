@@ -1,0 +1,83 @@
+.about-us {
+    width: 100%;
+    min-width: 1150px;
+    /* height: 550px; */
+    background-color: #fafbfd;
+
+    box-shadow: 0 0 5px #d3d3d3 inset;
+
+    padding: 80px 0px 100px 0px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* .about-lee-wrapper {
+    min-width: 1150px;
+} */
+
+.about-lee {
+    width: 880px;
+    background-color: #ffffff;
+    margin-right: 130px;
+
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+
+    position: relative;
+}
+
+.lee-nickname {
+    font-size: 60px;
+    font-weight: bold;
+
+    text-align: left;
+
+    margin-top: 40px;
+    margin-left: -66px;
+}
+
+/* .nickname-pic {
+    box-shadow: 4px 4px 8px rgb(115 110 110 / 50%);
+} */
+
+.desc-wrapper {
+    /* height: 300px; */
+    padding: 10px 160px 40px 30px;
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
+    font-weight: initial;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.lee-pic-wrapper {
+    text-align: right;
+}
+
+.lee-pic {
+    position: absolute;
+    top: 175px;
+    right: -88px;
+
+    box-shadow: 4px 4px 8px rgb(115 110 110 / 50%);
+}
+
+.lee-introduce {
+    text-align: left;
+}
+
+.desc-wrapper .qrcode-wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.zhishixingqiu {
+    margin-left: 30px;
+    padding: 5px 0;
+}
+
+.douyin {
+    margin-left: 30px;
+}

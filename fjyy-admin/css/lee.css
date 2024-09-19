@@ -1,0 +1,439 @@
+body {
+    background-color: #f2f6f9;
+}
+
+/* css by 风间影月 */
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    /* margin-top: 16px; */
+    padding: 26px 0;
+    /* min-height: 1000px; */
+    min-height: 880px;
+    
+    /* flex布局，页面主要内容分为左中右三块 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 社区动态 start */
+.website-left {
+    width: 1060px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.community-events-box {
+    /* width: 1060px; */
+    height: fit-content;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-radius: 10px;
+}
+
+.community-events-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 50px;
+    border-bottom: 1px solid #e8e6e6;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding-left: 10px;
+}
+
+.line-content-wrapper {
+    padding: 16px 20px 0px 20px;
+}
+
+.line-content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 0 0 16px 0;
+
+    border-bottom: 1px solid #eaecec;
+}
+
+.line-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 10px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.content-title {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-left: 6px;
+
+    align-self: center;
+}
+
+.link-title {
+    color: #657181;
+}
+
+.content-other {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.publisher-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4e5358;
+    align-self: center;
+}
+
+.publish-time {
+    align-self: center;
+    margin-left: 6px;
+}
+
+.lables {
+    padding: 2px 6px;
+    border-radius: 4px;
+
+    font: 12px;
+    font-weight: 500;
+
+    align-self: center;
+}
+
+.lable-recommend {
+    color: #119e8f;
+    border: 1px solid #119e8f;
+}
+
+.lable-sigh {
+    color: #ffffff;
+    background-color: #119e8f;
+    border: 1px solid #119e8f;
+}
+
+.lable-comment {
+    color: #ffffff;
+    background-color: #894bfb;
+    border: 1px solid #894bfb;
+}
+
+.lable-article {
+    color: #ffffff;
+    background-color: #2e75f9;
+    border: 1px solid #2e75f9;
+}
+
+.page-box {
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 12px 0;
+    margin-top: 12px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* 社区动态 end */
+
+/* 社区公告 start */
+.website-right {
+    width: 325px;
+}
+
+.community-notice-box {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-radius: 10px;
+}
+
+.notice-btns {
+    /* background-color: #e9f2f2; */
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 10px 0;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* 社区公告 end */
+
+/* 网站标签 start */
+.website-tags-box {
+    /* background-color: #e9f2f2; */
+    /* background-color: #fff; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    /* padding: 10px 0; */
+
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 10px; */
+}
+
+.website-tags-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    height: 50px;
+    border-bottom: 1px solid #e8e6e6;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding-left: 16px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tags-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.a-tag {
+    color: #119e8f;
+
+    border: 1px solid #119e8f;
+    border-radius: 20px;
+
+    padding: 6px 16px;
+    margin: 5px;
+}
+.a-tag:hover {
+    cursor: pointer;
+    background-color: #119e8f;
+    color: #ffffff;
+}
+
+.display-btns {
+    background-color: #e4eeee;
+    /* background-color: #fff; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 10px 0;
+
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+}
+/* 网站标签 end */
+
+/* 签到排行 start */
+.website-sign-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.website-sign-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    height: 50px;
+    border-bottom: 1px solid #e8e6e6;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding-left: 16px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sign-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.sign-line-record {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100vh;
+    margin: 6px 0;
+}
+
+.sign-line-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.ranking-cup {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+.ranking-number {
+    align-self: center;
+    font-size: 16px;
+    /* font-weight: 300; */
+    color: #151516;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.small-face {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+
+    border-radius: 50%;
+
+    align-self: center;
+}
+
+.sign-username {
+    color: #119e8f;
+    margin-left: 6px;
+    font-size: 16px;
+    align-self: center;
+}
+
+.sign-line-right {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* 签到排行 end */
+
+/* 课程推荐 start */
+.five-courses-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* margin-top: 20px; */
+}
+
+.a-course {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    background-color: #e4eeee;
+
+    padding: 6px 12px;
+    border-radius: 10px;
+
+    margin: 3px 0;
+}
+.a-course:hover {
+    background-color: #e9fcf8;
+    cursor: pointer;
+    /* color: #ffffff; */
+}
+
+.course-icon {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+
+    border-radius: 50%;
+
+    align-self: center;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-left: 10px;
+}
+
+.course-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #151516;
+}
+
+.course-desc {
+    
+}
+/* 课程推荐 end */
+
+/* 技术交流群 start */
+.my-weixin-qrcode-box {
+    background-color: #ffffff;
+}
+.add-me {
+    /* color: #161616; */
+    color: #657181;
+    font-size: 16px;
+    padding-top: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.my-qrcode {
+}
+/* 技术交流群 end */
