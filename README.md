@@ -77,17 +77,17 @@ FJYY-Admin 极简后台管理系统，前端基于Vue+ElementUI，无需nodejs�
 Github链接地址会放在评论区，如果没有看到可以私信，我会一一回复。
 
 关注抖音：
-<img src="./media/qrcode-douyin.png" width ="300" />
+<img src="./media/qrcode-douyin.png" width ="200" />
 
 
 
 关注公众号：
-<img src="./media/qrcode-gzh.png" width ="300" />
+<img src="./media/qrcode-gzh.png" width ="200" />
 
 
 
 微信技术交流（验证：来自github）：
-<img src="./media/qrcode-fjyy.png" width ="300" />
+<img src="./media/qrcode-fjyy.png" width ="200" />
 
 
 ### License
