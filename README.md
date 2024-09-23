@@ -5,7 +5,7 @@ Github地址：https://github.com/leechenxiang/fjyy-admin
 FJYY-Admin 极简后台管理系统，前端基于Vue+ElementUI，无需nodejs，无需npm，对后端开发人员极其友好~
 本框架基于`Vue` + `ElementUI`，链接地址为：https://element.eleme.cn/
 
-使用与解说视频见bilibili：
+使用与解说视频见bilibili：https://www.bilibili.com/video/BV16ms2e9Erd
 
 运行效果：
 ![-w1914](./media/17267577702365.jpg)
