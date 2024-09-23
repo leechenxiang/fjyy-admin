@@ -76,6 +76,10 @@ FJYY-Admin 极简后台管理系统，前端基于Vue+ElementUI，无需nodejs�
 ### 基本操作4：查
 ![-w489](./media/17267181411888.jpg)
 
+### 运行后端项目
+运行“Application.java”即可：
+![-w549](./media/17270600481864.jpg)
+
 
 关注抖音：
 <img src="./media/qrcode-douyin.png" width ="200" />
